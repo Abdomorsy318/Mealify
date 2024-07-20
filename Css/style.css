@@ -1,0 +1,883 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.navbar{
+    position: fixed;
+    background-color: #FFFFFF;
+    width: 100%;
+    z-index: 999999;
+}
+.navbar ul li {
+    margin: 5px 0;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    color: #5c5a5a;
+    transition: color 0.5s , border-bottom 0.1s;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.navbar ul li:hover {
+    color: #000;
+    border-bottom: 2px solid #CF1212 ;
+    border-radius: 5%;
+}
+
+.navbar h1 {
+    width: 15%;
+    margin: 25px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: rgb(33, 37, 41);
+    position: relative;
+}
+
+.navbar h1::after,
+.footer .head h2::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    top: 30px;
+    left: 110px;
+    position: absolute;
+    background-color: #E61414;
+}
+
+.footer .head h2::after {
+    top: 40px;
+}
+
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #EEEEEE;
+}
+
+
+.img-header img {
+    width: 100%;
+}
+
+.img-header {
+    width: 95%;
+    margin: 20px auto;
+}
+
+.content-header {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-content: center;
+    width: 100%;
+}
+
+.content-header h2 {
+    margin: 15px auto;
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 700;
+    color: rgb(55, 55, 63);
+    font-size: 65px;
+}
+
+.content-header p,
+.head p,
+.quick-menu p,
+.get-in-touch p {
+    width: 95%;
+    margin: auto;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    color: rgb(79, 79, 90);
+    font-size: 15px;
+    line-height: 26px;
+}
+
+.btns-header {
+    gap: 2.5rem;
+    margin: 10px auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-header,
+.inputs button,
+.subscribe button {
+    background-color: #CE1212;
+    padding: 15px 35px;
+    border-radius: 25px;
+    border: transparent;
+    transition: background-color .5s;
+    color: #FFF;
+}
+
+.btn-header:hover,
+.inputs button:hover {
+    background-color: #E61414;
+}
+
+a {
+    align-items: baseline;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #212529;
+    transition: color .5s;
+}
+
+a:hover {
+    color: #E61414;
+}
+
+.youtub-icon {
+    border-left: 10px solid #CF1212;
+    border-top: 10px solid #CF1212;
+    border-bottom: 10px solid #CF1212;
+    border-right: 10px solid #FFF;
+    border-radius: 100%;
+}
+
+i {
+    border: 10px solid #FFF;
+    border-radius: 50%;
+}
+
+/* ----------------------- */
+
+.chefs {
+    background-color: #F9F9F9;
+    padding: 30px 0;
+}
+
+.title-chefs,
+.title-gallery,
+.title-contact {
+    text-align: center;
+    padding: 30px 0;
+    line-height: 0;
+}
+
+.title-chefs span,
+.title-gallery span,
+.title-contact span {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    color: rgb(127, 127, 144);
+    font-size: 14px;
+}
+
+.title-chefs p,
+.title-gallery p,
+.title-contact p {
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 400;
+    color: rgb(33, 37, 41);
+    font-size: 50px;
+}
+
+.title-chefs p span,
+.title-gallery p span,
+.title-contact p span {
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 400;
+    color: rgb(206, 18, 18);
+    font-size: 50px;
+}
+
+.name1 {
+    background-image: url(../images/chefs-1.jpg);
+}
+
+.name2 {
+    background-image: url(../images/chefs-2.jpg);
+}
+
+.name3 {
+    background-image: url(../images/chefs-3.jpg);
+}
+
+.chefs-name {
+    background-size: cover;
+    background-position: center center;
+    width: 90%;
+    margin: auto;
+    border-radius: 1%;
+    text-align: center;
+    height: 100vh;
+    margin: 30px;
+    display: flex;
+    align-items: flex-end;
+    border-radius: 5px;
+    transition: transform 0.5s;
+}
+
+.chefs-name:hover {
+    transform: scale(1.07);
+}
+
+
+.chefs-name .content-chefs h2,
+.layer2 h2,
+.address h2,
+.email h2,
+.call h2,
+.opening h2,
+.social h3,
+.subscribe h3,
+.quick-links h3,
+.get-in-touch h3 {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    color: rgb(33, 37, 41);
+    font-size: 19px;
+}
+
+.chefs-name .content-chefs span,
+.layer2 p,
+.address p,
+.email p,
+.call p,
+.opening p,
+.subscribe p {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    color: rgb(127, 127, 144);
+    font-size: 14px;
+}
+
+.chefs-name .content-chefs p {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    color: rgb(127, 127, 144);
+    font-size: 15px;
+}
+
+.content-chefs {
+    background-color: #ffffff;
+    position: relative;
+}
+
+.waves {
+    position: absolute;
+    width: 100%;
+    transform: translateY(-90%);
+}
+
+
+/* ----------------------- */
+
+.gallery {
+    background-color: #EEEEEE;
+    padding: 30px 0;
+}
+
+.food-galleries {
+    width: 90%;
+    margin: auto;
+}
+
+.food-galleries img {
+    width: 100%;
+}
+
+.Pizza,
+.Burger,
+.Levitation-pizza,
+.Frittata,
+.Beef-steaks,
+.Crispy-Fried-Chicken,
+.Lyulya-kebab {
+    margin: 20px 0;
+    border: 5px solid #FFF;
+    position: relative;
+    overflow: hidden;
+}
+
+.pizza-img,
+.Burger-img,
+.Levitation-img,
+.Frittata-img,
+.Beef-img,
+.Crispy-img,
+.Lyulya-img {
+    transition: transform 0.5s;
+}
+
+.Pizza:hover .layer2,
+.Burger:hover .layer2,
+.Levitation-pizza:hover .layer2,
+.Frittata:hover .layer2,
+.Beef-steaks:hover .layer2,
+.Crispy-Fried-Chicken:hover .layer2,
+.Lyulya-kebab:hover .layer2 {
+    top: 0%;
+}
+
+.Pizza:hover .pizza-img,
+.Burger:hover .Burger-img,
+.Levitation-pizza:hover .Levitation-img,
+.Frittata:hover .Frittata-img,
+.Beef-steaks:hover .Beef-img,
+.Crispy-Fried-Chicken:hover .Crispy-img,
+.Lyulya-kebab:hover .Lyulya-img {
+    transform: scale(1.1);
+}
+
+
+.layer2 {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    top: 101%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: top 0.5s;
+}
+
+.text-layer2 {
+    color: #FFF;
+    text-align: center;
+    line-height: 20px;
+}
+
+.layer2 h2 {
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+}
+
+.layer2 p {
+    color: rgb(221, 221, 221);
+    font-size: 13px;
+    padding: 0 30px;
+}
+
+
+/* ------------------ */
+
+
+.contact {
+    background-color: #FAFAFA;
+    padding: 30px 0;
+}
+
+iframe {
+    width: 90%;
+    height: 50%;
+    margin: auto;
+}
+
+.address,
+.email,
+.call,
+.opening {
+    background-color: #F5F5F5;
+    width: 90%;
+    margin: 15px auto;
+    display: flex;
+    align-items: center;
+}
+
+.text-address,
+.text-email,
+.text-call,
+.text-opening {
+    line-height: 1em;
+    padding: 10px 0;
+}
+
+.text-opening p span,
+.title-footer {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: rgb(33, 37, 41);
+    position: relative;
+}
+
+.address h2,
+.email h2,
+.call h2,
+.opening h2 {
+    color: rgb(125, 125, 125);
+}
+
+.address p,
+.email p,
+.call p,
+.opening p {
+    color: rgb(33, 37, 41);
+}
+
+.icon {
+    padding: 0 30px;
+}
+
+.contact i {
+    background-color: #CE1212;
+    color: #FFFFFF;
+    border-radius: 50%;
+    padding: 20px;
+    border: 1px solid #CE1212;
+}
+
+.inputs {
+    background-color: #FFFFFF;
+    width: 90%;
+    margin: auto;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.input-1,
+.input-2,
+.input-3,
+.input-4 {
+    margin: 10px;
+}
+
+input,
+textarea {
+    padding: 20px;
+    width: 100%;
+    border: 2px solid #E8E3E3;
+}
+
+input:focus,
+textarea:focus {
+    outline: #CE1212;
+    border: 2px solid #CE1212;
+
+}
+
+.inputs button {
+
+    margin-top: 30px;
+}
+
+/* --------------- */
+
+.footer {
+    background-image: linear-gradient(#0009, #0009), url(../images/textured-metal-background.jpg);
+    background-size: contain;
+    background-position: center center;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.icons-footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.icons-footer i,
+.subscribe button i,
+.quick-left i,
+.quick-right i,
+.get-in-touch p i {
+    border: 0px solid #000;
+    color: #FFFFFF;
+    font-size: 25px;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.img-footer {
+    width: 10%;
+}
+
+.img-footer img {
+    width: 100%;
+}
+
+.title-footer {
+    color: #FFFFFF;
+    margin-left: 10px;
+}
+
+.head-footer {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.head p,
+.subscribe p {
+    margin: 0;
+    color: #FFFFFF;
+}
+
+.social h3 {
+    text-align: center;
+    position: relative;
+    color: #FFFFFF;
+}
+
+.social {
+    width: 100%;
+}
+
+.head-footer h3::after {
+    content: '';
+    width: 100%;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    border-bottom: 2px solid #585858;
+}
+
+.subscribe h3 {
+    color: #FFFFFF;
+}
+
+.subscribe input {
+    margin: 15px 0;
+    padding: 10px;
+}
+
+.subscribe button {
+    width: 100%;
+    border-radius: 0;
+    padding: 10px 0;
+}
+
+.subscribe button i,
+.quick-left i,
+.quick-right i,
+.get-in-touch p i {
+    font-size: 15px;
+}
+
+.quick-links {
+    width: 100%;
+}
+
+.quick-links h3,
+.quick-menu p,
+.get-in-touch p {
+    color: #FFFFFF;
+
+}
+
+.quick-left {
+    width: 40%;
+}
+
+.quick-left p,
+.quick-right p {
+    transition: transform 0.5s, background-color 0.5s;
+}
+
+.quick-left p:hover,
+.quick-right p:hover {
+    background-color: #222222;
+    transform: translateX(10px);
+}
+
+.quick-right {
+    width: 40%;
+    margin: auto;
+}
+
+
+
+.quick-menu {
+    display: flex;
+}
+
+.get-in-touch p i {
+    padding-right: 10px;
+    color: #CE1212;
+}
+
+.get-in-touch p {
+    margin-bottom: 10px;
+}
+
+.get-in-touch h3 {
+    color: #FFFFFF;
+}
+
+@media screen and (min-width:700px) {
+    .navbar {
+        display: flex;
+        justify-content: center;
+        justify-content: baseline;
+        justify-content: space-evenly;
+    }
+
+    .navbar ul {
+        width: 40%;
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+
+
+@media screen and (min-width:950px) {
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content-header {
+        width: 40%;
+        text-align: center;
+
+    }
+
+    .img-header {
+        width: 80%;
+        margin-left: auto;
+    }
+
+    .btns-header {
+        margin-inline: 0;
+    }
+
+    .chef {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
+    .chefs-name {
+        background-size: cover;
+        background-position: center center;
+        width: 40%;
+        margin: auto;
+        border-radius: 1%;
+        text-align: center;
+        margin: 30px;
+        display: flex;
+        align-items: flex-end;
+        border-radius: 5px;
+        transition: transform 0.5s;
+    }
+
+    .food-galleries,
+    .details {
+        columns: 2;
+    }
+
+    .food-galleries {
+        width: 70%;
+        margin: auto;
+    }
+
+    .details {
+        width: 85%;
+        margin: auto;
+    }
+
+    iframe {
+        width: 80%;
+        height: 60%;
+        margin: auto;
+    }
+
+    .address,
+    .Pizza {
+        margin-top: 0;
+    }
+
+    .inputs {
+        width: 80%;
+    }
+
+    .head-footer {
+        display: flex;
+    }
+
+    .left-footer {
+        width: 50%;
+        order: -2;
+    }
+
+    .social {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .subscribe {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 10px 0;
+    }
+
+    .subscribe input {
+        width: 85%;
+        margin: 10px 0;
+    }
+
+    .subscribe button {
+        width: 10%;
+        margin: 10px;
+    }
+
+    .get-in-touch {
+        width: 50%;
+        order: -1;
+    }
+}
+
+
+
+
+@media screen and (min-width:1000px) {
+
+    .header {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .content-header {
+        width: 40%;
+        text-align: start;
+        margin: auto;
+        order: -1;
+    }
+
+    .img-header {
+        width: 40%;
+        margin-left: auto;
+    }
+
+    .btns-header {
+        margin-inline: 0;
+        text-align: start;
+    }
+
+
+    .chef {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+    .chefs-name {
+        width: 25%;
+    }
+
+
+    .food-galleries {
+        columns: 3;
+    }
+
+    .food-galleries {
+        width: 95%;
+        margin: auto;
+    }
+
+    .details {
+        width: 90%;
+        margin: auto;
+    }
+
+    iframe {
+        width: 90%;
+        height: 60%;
+        margin: auto;
+    }
+
+    .address,
+    .Pizza {
+        margin-top: 0;
+    }
+
+    .contain-inputs {
+        display: flex;
+    }
+
+    .inputs {
+        width: 90%;
+    }
+
+    .input-1,
+    .input-2 {
+        width: 50%;
+    }
+
+    .head-footer {
+        display: flex;
+        justify-content: center;
+    }
+
+    .head {
+        width: 100%;
+    }
+
+    .social {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .subscribe {
+        width: 45%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 10px;
+    }
+
+    .subscribe input {
+        width: 80%;
+        margin: 10px 0;
+    }
+
+    .subscribe button {
+        width: 15%;
+        margin: 10px;
+    }
+
+    .get-in-touch {
+        width: 25%;
+        order: 5;
+    }
+
+    .quick-links {
+        width: 45%;
+        order: 6;
+    }
+
+    .left-footer {
+        width: 25%;
+    }
+}
